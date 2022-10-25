@@ -9,7 +9,7 @@ export interface IAboutPageProps {
 const AboutPage: React.FunctionComponent<IAboutPageProps> = (props) => {
 
   return (
-    <div className="container">
+    <div className="container__nosotros">
       <div className="nosotros">
         <h3 className="nosotros__title">Nosotros</h3>
         <p className="nosotros__info">
