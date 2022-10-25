@@ -100,14 +100,14 @@ body {
 .item__product-image {
   margin: 0;
   width: 100%;
-  
+
   border-color: #fff ;
   text-align: center;
 }
 .product__image{
-  background-color: #000;
+  
   width: 100%;
-  height: 100px;
+  height: 200px;
 }
 .item__product-info{
   display: flex;

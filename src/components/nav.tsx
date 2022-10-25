@@ -1,4 +1,3 @@
-import { Button, Container, Nav } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { ModulesRoutes } from "../routes/router";
 import logo from "../assets/logo_shop.png";
@@ -27,7 +26,7 @@ function NavBar() {
           </Link>
         </li>
         <li className="nav-item">
-        <Link className="nav-link link-login" to={`${ModulesRoutes.LOGIN}`}>
+          <Link className="nav-link link-login" to={`${ModulesRoutes.LOGIN}`}>
             Ingresar
           </Link>
         </li>

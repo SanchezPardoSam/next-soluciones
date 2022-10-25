@@ -1,18 +1,39 @@
 import React from "react";
-import img from "../assets/logo_shop.png";
-export interface IItemProductPageProps {}
+import extreme from "../assets/products/case-extreme.jpg"
+import spartan from "../assets/products/case-spartan.jpg"
+import blue from "../assets/products/disco-wd-blue.jpg"
+import green from "../assets/products/disco-wd-green.jpg"
+import adrus from "../assets/products/placa-adrus.png"
+import giga from "../assets/products/placa-gigabye.jpg"
+import logo from "../assets/logo_shop.png"
+export interface IItemProductPageProps {
+  id: string,
+  imagen: string,
+  nombre: string,
+  precio: string
+}
 
 const ItemProductPage: React.FunctionComponent<IItemProductPageProps> = (
   props
 ) => {
+  
   return (
     <div className="container__item-product col">
       <div className="item__product-image">
-        <img className="product__image" src={img} alt="product" />
+
+        <img className="product__image" src={
+          props.nombre == "Case gamers Extreme" ? extreme : 
+          props.nombre == "Case gamers Spartan" ? spartan: 
+          props.nombre == "Disco wester blue 500gb" ? blue:
+          props.nombre == "Disco wester green 500gb" ? green:
+          props.nombre == "Placa gamers Adrus" ? adrus:
+          props.nombre == "Placa gamers gigabyte" ? giga:logo
+      } alt="product" />
+
       </div>
       <div className="item__product-info">
-        <div className="item__product-price">s/. 200</div>
-        <div className="item__product-name">procesador ryzen 7 serie 6000</div>
+        <div className="item__product-price">{"s./"+props.precio}</div>
+        <div className="item__product-name">{props.nombre}</div>
       </div>
     </div>
   );
