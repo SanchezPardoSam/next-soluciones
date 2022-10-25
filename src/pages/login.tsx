@@ -32,6 +32,7 @@ const LoginPage: React.FunctionComponent<ILoginPageProps> = (props) => {
             className="form-control"
             id="password"
             placeholder="Password"
+            type="password"
             value={pass}
             onChange={(event) => setPass(event.target.value)}
           />

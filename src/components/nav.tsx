@@ -27,7 +27,7 @@ function NavBar() {
         </li>
         <li className="nav-item">
           <Link className="nav-link link-login" to={`${ModulesRoutes.LOGIN}`}>
-            Ingresar
+              Samuel
           </Link>
         </li>
       </ul>
